@@ -54,10 +54,18 @@ nmap <ip-address>
 * abuse suid/guid
 * edit/abuse misconfigured files
   * `/etc/sudoers`
+  * sshd.config file
 * guess/crack pw
 * steal/abuse ssh keys
 * find other running services
 * environment variables
 * use known shell exploits
 * read command history
+
+### persistence
+
+* reverse shells (netcat)
+* setup your own services/backdoors
+  * webshell (user is www-data)
+* get info about system
 
