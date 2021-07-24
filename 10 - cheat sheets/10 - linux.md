@@ -96,7 +96,24 @@
 
 `Alt + N` - toggle line numbers
 
-
-
 ### vim
 
+???
+
+### networking
+
+`ifconfig` or `ip addr` - displays IP address
+
+`iwconfig` - displays IP address for wireless interface
+
+`ping` - ping an address
+
+`arp -a` - associates MAC to IP
+
+`netstat` - shows network stats
+
+`netstat -tulpn` - the bread and butter of connections
+
+`route` - show routing table
+
+`dhclient` - show stats of DHCP client
