@@ -1,6 +1,6 @@
 # powershell
 
-powershell commands
+### general commands
 
 | Command name        | Alias                         | Description                                                  |
 | :------------------ | :---------------------------- | :----------------------------------------------------------- |
@@ -29,3 +29,27 @@ powershell commands
 | `Wait-Job`          | wjb                           | Suppresses the command prompt until one or all of the Windows PowerShell background jobs running in the session are … |
 | `Where-Object`      | ?, where                      | Selects objects from a collection based on their property values. |
 | `Write-Output`      | echo, write                   | Sends the specified objects to the next command in the pipeline. If the command is the last command in the pipeline,… |
+
+### ad related
+
+`Import-Module ActiveDirectory` - import AD module
+
+`Get-ADDomain` - get basic domain info
+
+`Get-ADDomainController -filter * | select hostname, operatingsystem` - get all domain controllers by hostname and OS
+
+`Get-ADFineGrainedPasswordPolicy -filter *` - get all fine-grained password policies
+
+`Get-ADDefaultDomainPasswordPolicy` - get default password ploicy
+
+`Get-ADUser username -Properties *` - get user and list all properties (replace username)
+
+`Get-ADUser -Filter *` - get all AD users
+
+`Get-ADComputer -filter *` - get all AD computers
+
+`Get-Service` - get all services
+
+`Get-Process` - get all processes
+
+`Enter-PSSession -ComputerName` - start interactive session with remote computer
