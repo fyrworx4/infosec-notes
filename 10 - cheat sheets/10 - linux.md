@@ -52,11 +52,51 @@
 
 `Ctrl + X` - exit
 
-##### copy / paste
+##### cursor movement
+
+`Ctrl + A` - start of line
+
+`Ctrl + E` - end of line
+
+`Ctrl + Y` - one page up
+
+`Ctrl + V` - one page down
+
+##### searching
+
+`Ctrl + Q` - backward search
+
+`Ctrl + W` - forward search
+
+`Alt + Q` - find next occurrence backward
+
+`Alt + W` - find next occurrence forward
+
+##### editing
+
+`Alt + A` - turn mark on/off
 
 `Ctrl + K` - cut
 
 `Alt + 6` - copy
+
+`Ctrl + U` - paste
+
+`Alt + U` - undo
+
+`Alt + E` - redo
+
+##### macros
+
+`Alt + :` - start / stop macro
+
+`Alt + ;` - replay macro
+
+##### misc
+
+`Alt + N` - toggle line numbers
+
+
 
 ### vim
 
