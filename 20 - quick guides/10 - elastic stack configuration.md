@@ -24,6 +24,25 @@ sudo apt-get update && sudo apt-get install elasticsearch
 sudo nano /etc/elasticsearch/elasticsearch.yml
 ```
 
+Uncomment `node.name:`
+
+```
+/etc/elasticsearch/elasticsearch.yml
+
+# ------------------------------------ Node ------------------------------------
+#
+# Use a descriptive name for the node:
+#
+node.name: node-1
+#
+# Add custom attributes to the node:
+#
+#node.attr.rack: r1
+#
+```
+
+
+
 Uncomment `network.host` and add in `0.0.0.0` to the end of it:
 
 ```
@@ -109,4 +128,58 @@ sudo service kibana status
 ### Configuring Filebeat
 
 Go to `<ip_address>:5601` on a web browser, go to "Add data", select which type of data to ingest, follow steps on site.
+
+```bash
+curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.13.4-amd64.deb
+sudo dpkg -i filebeat-7.13.4-amd64.deb
+sudo nano /etc/filebeat/filebeat.yml
+```
+
+Edit kibana host and elasticsearch host
+
+```
+/etc/filebeat/filebeat.yml
+
+# =================================== Kibana ===================================
+
+# Starting with Beats version 6.0.0, the dashboards are loaded via the Kibana API.
+# This requires a Kibana endpoint configuration.
+setup.kibana:
+
+  # Kibana Host
+  # Scheme and port can be left out and will be set to the default (http and 5601)
+  # In case you specify and additional path, the scheme is required: http://localhost:5601/path
+  # IPv6 addresses should always be defined as: https://[2001:db8::1]:5601
+  host: "192.168.1.8:5601"
+
+  # Kibana Space ID
+  # ID of the Kibana Space into which the dashboards should be loaded. By default,
+  # the Default Space will be used.
+  #space.id:
+```
+
+```
+/etc/filebeat/filebeat.yml
+
+# ---------------------------- Elasticsearch Output ----------------------------
+output.elasticsearch:
+  # Array of hosts to connect to.
+  hosts: ["192.168.1.8:9200"]
+
+  # Protocol - either `http` (default) or `https`.
+  #protocol: "https"
+
+  # Authentication credentials - either API key or username/password.
+  #api_key: "id:api_key"
+  #username: "elastic"
+  #password: "changeme"
+```
+
+```bash
+sudo filebeat modules enable system
+sudo filebeat setup
+sudo service filebeat start
+```
+
+
 
