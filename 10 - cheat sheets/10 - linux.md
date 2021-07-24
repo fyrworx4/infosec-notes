@@ -46,11 +46,9 @@
 
 ##### file handling
 
-`Ctrl + S` - save
-
-`Ctrl + O` - save as
-
-`Ctrl + X` - exit
+* `Ctrl + S` - save
+* `Ctrl + O` - save as
+* `Ctrl + X` - exit
 
 ##### cursor movement
 
@@ -85,6 +83,8 @@
 `Alt + U` - undo
 
 `Alt + E` - redo
+
+`Ctrl + K` - remove line
 
 ##### macros
 
