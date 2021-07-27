@@ -2,45 +2,45 @@
 
 ### package management
 
-`apt install` - install package
+* `apt install` - install package
 
-`apt remove` - remove package
+* `apt remove` - remove package
 
-`apt autoremove` - remove dependencies
+* `apt autoremove` - remove dependencies
 
-`apt purge` - remove package + configurations
+* `apt purge` - remove package + configurations
 
-`dpkg` - manage debian packages
+* `dpkg` - manage debian packages
 
 ### insane linux
 
-`Ctrl + L` - clear terminal
+* `Ctrl + L` - clear terminal
 
-`Ctrl + R` - search command history
+* `Ctrl + R` - search command history
 
-`Ctrl + A` - go to beginning of line
+* `Ctrl + A` - go to beginning of line
 
-`Ctrl + E` - go to end of line
+* `Ctrl + E` - go to end of line
 
-`Alt + B` - go back one word
+* `Alt + B` - go back one word
 
-`Alt + F` - go forward one word
+* `Alt + F` - go forward one word
 
-`Ctrl + U` - cut everything before cursor
+* `Ctrl + U` - cut everything before cursor
 
-`Ctrl + K` - cut everything after cursor
+* `Ctrl + K` - cut everything after cursor
 
-`Ctrl + Y` - paste
+* `Ctrl + Y` - paste
 
 ### services
 
-`systemctl status sshd` or `service ssh status` - view status of service
+* `systemctl status sshd` or `service ssh status` - view status of service
 
-`systemctl restart sshd` or `service ssh restart` - restart service
+* `systemctl restart sshd` or `service ssh restart` - restart service
 
-`systemctl stop sshd` or `service ssh stop` - stop service
+* `systemctl stop sshd` or `service ssh stop` - stop service
 
-`systemctl start sshd` or `service ssh start` - start service
+* `systemctl start sshd` or `service ssh start` - start service
 
 ### nano
 
@@ -52,49 +52,49 @@
 
 ##### cursor movement
 
-`Ctrl + A` - start of line
+* `Ctrl + A` - start of line
 
-`Ctrl + E` - end of line
+* `Ctrl + E` - end of line
 
-`Ctrl + Y` - one page up
+* `Ctrl + Y` - one page up
 
-`Ctrl + V` - one page down
+* `Ctrl + V` - one page down
 
 ##### searching
 
-`Ctrl + Q` - backward search
+* `Ctrl + Q` - backward search
 
-`Ctrl + W` - forward search
+* `Ctrl + W` - forward search
 
-`Alt + Q` - find next occurrence backward
+* `Alt + Q` - find next occurrence backward
 
-`Alt + W` - find next occurrence forward
+* `Alt + W` - find next occurrence forward
 
 ##### editing
 
-`Alt + A` - turn mark on/off
+* `Alt + A` - turn mark on/off
 
-`Ctrl + K` - cut
+* `Ctrl + K` - cut
 
-`Alt + 6` - copy
+* `Alt + 6` - copy
 
-`Ctrl + U` - paste
+* `Ctrl + U` - paste
 
-`Alt + U` - undo
+* `Alt + U` - undo
 
-`Alt + E` - redo
+* `Alt + E` - redo
 
-`Ctrl + K` - remove line
+* `Ctrl + K` - remove line
 
 ##### macros
 
-`Alt + :` - start / stop macro
+* `Alt + :` - start / stop macro
 
-`Alt + ;` - replay macro
+* `Alt + ;` - replay macro
 
 ##### misc
 
-`Alt + N` - toggle line numbers
+* `Alt + N` - toggle line numbers
 
 ### vim
 
@@ -102,18 +102,18 @@
 
 ### networking
 
-`ifconfig` or `ip addr` - displays IP address
+* `ifconfig` or `ip addr` - displays IP address
 
-`iwconfig` - displays IP address for wireless interface
+* `iwconfig` - displays IP address for wireless interface
 
-`ping` - ping an address
+* `ping` - ping an address
 
-`arp -a` - associates MAC to IP
+* `arp -a` - associates MAC to IP
 
-`netstat` - shows network stats
+* `netstat` - shows network stats
 
-`netstat -tulpn` - the bread and butter of connections
+* `netstat -tulpn` - the bread and butter of connections
 
-`route` - show routing table
+* `route` - show routing table
 
-`dhclient` - show stats of DHCP client
+* `dhclient` - show stats of DHCP client

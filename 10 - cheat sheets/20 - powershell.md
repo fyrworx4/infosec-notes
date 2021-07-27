@@ -53,3 +53,22 @@
 `Get-Process` - get all processes
 
 `Enter-PSSession -ComputerName` - start interactive session with remote computer
+
+### smb lmao
+
+Disabling SMBv1
+
+```powershell
+Get-WindowsOptionalFeature -Online -FeatureName smb1protocol
+```
+
+```powershell
+Disable-WindowsOptionalFeature -Online -FeatureName smb1protocol
+```
+
+Listing fileshares
+
+```
+Get
+```
+

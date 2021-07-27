@@ -75,5 +75,4 @@ nmap <ip-address>
   * webshell (user is www-data)
 * get info about system
 * https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Persistence.md
-* 
 

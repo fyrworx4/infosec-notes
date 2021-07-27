@@ -1,6 +1,6 @@
 # Elastic Stack Configuration
 
-This worked on Ubuntu 20.04
+This worked on Ubuntu 20.04.
 
 ### Configuring Elasticsearch
 
@@ -40,8 +40,6 @@ node.name: node-1
 #node.attr.rack: r1
 #
 ```
-
-
 
 Uncomment `network.host` and add in `0.0.0.0` to the end of it:
 
