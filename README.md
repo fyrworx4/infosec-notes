@@ -1,4 +1,4 @@
 # README
 
-hello!
+welcome to my notes :)
 
