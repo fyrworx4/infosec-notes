@@ -300,3 +300,17 @@ On Covenant:
 
 * Enumerate with `PowerUp.ps1` or `Seatbelt WindowsAutoLogon` to view Autologon credentials
 
+### FODHelper
+
+---
+
+On Covenant, with a Medium integrity shell:
+
+```
+PowershellImport
+
+* select helper.ps1 *
+
+powershell helped -custom "cmd.exe /c <blah>"
+```
+

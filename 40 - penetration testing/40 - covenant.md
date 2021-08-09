@@ -13,6 +13,8 @@
 
 ### How to get a grunt
 
+* Make sure attacker's antivirus is turned off
+
 * Create a Listener
   * Be sure to change ConnectAddresses
 * Go into Launchers
