@@ -1,4 +1,4 @@
-# attacking windows
+# windows - privesc
 
 ### generating reverse shell
 
