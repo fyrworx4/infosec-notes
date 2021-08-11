@@ -1,4 +1,10 @@
-# quick shells
+# metasploit
+
+### where all modules are located:
+
+```
+/usr/share/metasploit-framework/modules
+```
 
 ### meterpreter
 
