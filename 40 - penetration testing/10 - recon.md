@@ -1,6 +1,8 @@
 # recon
 
-### passive
+---
+
+## passive
 
 * Target Validation: WHOIS, nslookup, dnsrecond
 * Finding subdomains: Google Fu, dig, nmap, sublist3r, bluto, crt.sh,

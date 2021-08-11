@@ -1,6 +1,8 @@
 # linox
 
-### package management
+---
+
+## package management
 
 * `apt install` - install package
 
@@ -12,7 +14,7 @@
 
 * `dpkg` - manage debian packages
 
-### insane linux
+## insane linux
 
 * `Ctrl + L` - clear terminal
 
@@ -32,7 +34,7 @@
 
 * `Ctrl + Y` - paste
 
-### services
+## services
 
 * `systemctl status sshd` or `service ssh status` - view status of service
 
@@ -42,15 +44,15 @@
 
 * `systemctl start sshd` or `service ssh start` - start service
 
-### nano
+## nano
 
-##### file handling
+### file handling
 
 * `Ctrl + S` - save
 * `Ctrl + O` - save as
 * `Ctrl + X` - exit
 
-##### cursor movement
+### cursor movement
 
 * `Ctrl + A` - start of line
 
@@ -60,7 +62,7 @@
 
 * `Ctrl + V` - one page down
 
-##### searching
+### searching
 
 * `Ctrl + Q` - backward search
 
@@ -70,7 +72,7 @@
 
 * `Alt + W` - find next occurrence forward
 
-##### editing
+### editing
 
 * `Alt + A` - turn mark on/off
 
@@ -86,21 +88,21 @@
 
 * `Ctrl + K` - remove line
 
-##### macros
+### macros
 
 * `Alt + :` - start / stop macro
 
 * `Alt + ;` - replay macro
 
-##### misc
+### misc
 
 * `Alt + N` - toggle line numbers
 
-### vim
+## vim
 
 ???
 
-### networking
+## networking
 
 * `ifconfig` or `ip addr` - displays IP address
 * `iwconfig` - displays IP address for wireless interface
@@ -115,15 +117,17 @@
 
 # sysadmin commmands
 
-### find
+---
 
-### hostname
+## find
+
+## hostname
 
 ```bash
 sudo hostnamectl set-hostname [hostname]
 ```
 
-### users and groups
+## users and groups
 
 add a new user:
 
@@ -163,7 +167,7 @@ usermod -L [username]
 passwd -l []
 ```
 
-### VirtualBox Guest Additions
+## VirtualBox Guest Additions
 
 ```bash
 sudo apt update
@@ -172,4 +176,6 @@ sudo apt install build-essential dkms linux-headers-$(uname -r)
 ```
 
 # tmux
+
+---
 

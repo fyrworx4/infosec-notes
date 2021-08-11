@@ -1,12 +1,12 @@
 # linux - privesc
 
-### privilege escalation vs exploitation
+## privilege escalation vs exploitation
 
 * exploit some vuln to escalate
 * exploitation doesn't have to escalate
 * to escalate, you need to exploit
 
-##### how to escalate
+### how to escalate
 
 * abuse crontabs
 * abuse suid/guid
@@ -20,7 +20,7 @@
 * use known shell exploits
 * read command history
 
-### persistence
+## persistence
 
 * reverse shells (netcat)
 * setup your own services/backdoors

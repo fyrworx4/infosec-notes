@@ -1,12 +1,12 @@
 # metasploit
 
-### where all modules are located:
+## where all modules are located:
 
 ```
 /usr/share/metasploit-framework/modules
 ```
 
-### meterpreter
+## meterpreter
 
 ```bash
 msfconsole
@@ -32,13 +32,13 @@ set LHOST eth0
 run
 ```
 
-### meterpreter cool stuff
+## meterpreter cool stuff
 
 ```
 post/multi/recon/local_exploit_suggester
 ```
 
-### meterpreter shell commands
+## meterpreter shell commands
 
 * `sysinfo`
 * `getuid`

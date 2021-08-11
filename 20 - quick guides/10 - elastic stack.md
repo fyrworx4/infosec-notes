@@ -1,6 +1,6 @@
 # Elastic Stack Configuration
 
-This worked on Ubuntu 20.04.
+## Ubuntu 20.04
 
 ### Configuring Elasticsearch
 
@@ -123,7 +123,9 @@ sudo service kibana start
 sudo service kibana status
 ```
 
-### Configuring Filebeat
+## Filebeat
+
+### Ubuntu 20.04
 
 Go to `<ip_address>:5601` on a web browser, go to "Add data", select which type of data to ingest, follow steps on site.
 

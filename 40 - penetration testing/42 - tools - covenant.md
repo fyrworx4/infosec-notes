@@ -1,17 +1,17 @@
 # Covenant
 
-### Covenant Terms
+## Covenant Terms
 
 * Listener
 * Grunt
 
-### Covenant Grunt Commands
+## Covenant Grunt Commands
 
 * `whoami` - who am I
 * `Seatbelt -group=all` - get system info about everything
 * `GetDomainUser` - get domain users
 
-### How to get a grunt
+## How to get a grunt
 
 * Make sure attacker's antivirus is turned off
 
@@ -27,7 +27,7 @@
 * Once ran, go into Grunts
 * Enjoy!
 
-### PowerUp.ps1
+## PowerUp.ps1
 
 ```
 PowershellImport
@@ -37,9 +37,7 @@ PowershellImport
 powershell i
 ```
 
-
-
-### Persistence
+## Persistence
 
 Run these commands on a Grunt:
 

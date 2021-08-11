@@ -1,6 +1,8 @@
 # powershell
 
-### general commands
+---
+
+## general commands
 
 | Command name        | Alias                         | Description                                                  |
 | :------------------ | :---------------------------- | :----------------------------------------------------------- |
@@ -30,7 +32,7 @@
 | `Where-Object`      | ?, where                      | Selects objects from a collection based on their property values. |
 | `Write-Output`      | echo, write                   | Sends the specified objects to the next command in the pipeline. If the command is the last command in the pipeline,… |
 
-### ad related
+## ad related
 
 `Import-Module ActiveDirectory` - import AD module
 
@@ -54,7 +56,7 @@
 
 `Enter-PSSession -ComputerName` - start interactive session with remote computer
 
-### smb lmao
+## smb lmao
 
 Disabling SMBv1
 

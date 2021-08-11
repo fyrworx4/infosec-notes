@@ -6,7 +6,7 @@ This goes over how to configure the networking for blue-teaming competitions. He
 
 ![https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d6d676c5-8775-4d6d-9dd4-0a4bd9d507b2/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210724%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210724T042020Z&X-Amz-Expires=86400&X-Amz-Signature=b4fc2c727f770c05b011c50e6f60d406962c372c92d662d28915c672f5cd1867&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d6d676c5-8775-4d6d-9dd4-0a4bd9d507b2/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210724%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210724T042020Z&X-Amz-Expires=86400&X-Amz-Signature=b4fc2c727f770c05b011c50e6f60d406962c372c92d662d28915c672f5cd1867&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
 
-### On vSwitch
+## On vSwitch
 
 * Configure Port Groups with separate VLAN
   * 1 PG for core network
@@ -15,7 +15,7 @@ This goes over how to configure the networking for blue-teaming competitions. He
 
 ![https://s3.us-west-2.amazonaws.com/secure.notion-static.com/361775ea-5212-4e2c-a76e-0647c48c5653/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210724%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210724T042117Z&X-Amz-Expires=86400&X-Amz-Signature=9c58b3ac7bb1d2b9be5f3bd55d44a5e7f400e53e9925c8ef4205d3feef46f09b&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/361775ea-5212-4e2c-a76e-0647c48c5653/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210724%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210724T042117Z&X-Amz-Expires=86400&X-Amz-Signature=9c58b3ac7bb1d2b9be5f3bd55d44a5e7f400e53e9925c8ef4205d3feef46f09b&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
 
-### Create pfSense VMs
+## Create pfSense VMs
 
 * 1 Core Router - 3 network interfaces
   * WAN interface - VM Network (or 10 network or whatever)
@@ -25,7 +25,7 @@ This goes over how to configure the networking for blue-teaming competitions. He
   * WAN interface - Core PG
   * LAN interface - Team P
 
-### Configure pfSense VMs
+## Configure pfSense VMs
 
 * All Routers
 

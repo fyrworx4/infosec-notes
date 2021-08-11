@@ -1,6 +1,6 @@
 # misconfigure windows
 
-### autologon misconfig
+## autologon misconfig
 
 Set registry key to 1:
 
@@ -28,7 +28,7 @@ powershell invoke-allchecks
 Seatbelt
 ```
 
-### alwaysinstallelevated
+## alwaysinstallelevated
 
 Registry key:
 

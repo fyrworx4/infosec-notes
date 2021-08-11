@@ -11,7 +11,7 @@ s = socket.socket(socket,AF_INET, socket.SOCK_STREAM)
 s.connect((HOST,PORT))
 ```
 
-### port scanner in python
+## port scanner in python
 
 ```python
 #!/bin/python3

