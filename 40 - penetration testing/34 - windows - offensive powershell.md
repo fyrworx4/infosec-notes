@@ -126,6 +126,8 @@ Invoke-FileFinder
 
 ---
 
+List local admins
+
 ```powershell
 Invoke-EnumerateLocalAdmin
 ```
@@ -133,6 +135,8 @@ Invoke-EnumerateLocalAdmin
 ## enumerating group policy objects
 
 ---
+
+List GPOs
 
 ```powershell
 Get-NetGPO
