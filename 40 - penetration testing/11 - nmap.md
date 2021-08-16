@@ -104,6 +104,12 @@ written in Lua
 
 use `--script` to select a script to use. some scripts has arguments, which you define by using `--script-args`
 
+how to use scripts:
+
+```bash
+sudo nmap --script=ftp-anon 10.10.23.205 -p 21
+```
+
 ### searching for scripts
 
 scripts are located in `/usr/share/nmap/scripts`

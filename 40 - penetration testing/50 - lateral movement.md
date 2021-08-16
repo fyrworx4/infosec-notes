@@ -1,4 +1,4 @@
-# lateral -movement
+# lateral movement
 
 ## metasploit
 
@@ -113,4 +113,8 @@ msf6 auxiliary(server/socks_proxy) > exploit -j
 ```
 
 Run proxychains:
+
+```bash
+proxychains evil-winrm ...
+```
 
