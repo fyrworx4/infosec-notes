@@ -89,6 +89,10 @@ IPv4 Active Routing Table
 
 ## more advanced network mapping
 
+```
+use auxiliary/scanner/portscan/tcp
+```
+
 ## reverse port forwarding
 
 ```bash
@@ -103,8 +107,10 @@ Run proxy server on Kali:
 
 ```bash
 msf6 > use auxiliary/server/socks_proxy
-msf6 auxiliary(server/socks_proxy) > set srvhost 9050
+msf6 auxiliary(server/socks_proxy) > set srvport 9050
 msf6 auxiliary(server/socks_proxy) > set version 4a
 msf6 auxiliary(server/socks_proxy) > exploit -j
 ```
+
+Run proxychains:
 
