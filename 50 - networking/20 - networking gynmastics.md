@@ -275,7 +275,7 @@ sshuttle -r user@address --ssh-cmd "ssh -i KEYFILE" SUBNET
 sshuttle -r user@172.16.0.5 --ssh-cmd "ssh -i private_key" 172.16.0.0/24
 ```
 
-if ip of compromised host is in the same subnet, and you get errors, use the `-x` flag:
+if IP of compromised host is in the same subnet, and you get errors, use the `-x` flag:
 
 ```bash
 sshuttle -r user@172.16.0.5 172.16.0.0/24 -x 172.16.0.5
