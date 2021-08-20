@@ -28,5 +28,3 @@ $ xfreerdp /u:<username> /p:<password> /v:<ip-address>
 $ xfreerdp /u:s.chisholm /p:'FallOutBoy1!' /v:192.168.3.4
 ```
 
-
-

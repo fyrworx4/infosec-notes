@@ -312,3 +312,12 @@ PowershellImport
 powershell helped -custom "cmd.exe /c <blah>"
 ```
 
+## mimikatz
+
+---
+
+```
+privilege::debug
+
+```
+
