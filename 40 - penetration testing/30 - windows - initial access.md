@@ -10,3 +10,7 @@ sudo gem install evil-winrm
 evil-winrm -u USERNAME -p PASSWORD -i TARGET_IP
 ```
 
+```
+evil-winrm -u USERNAME -H HASH -i TARGET_IP
+```
+

@@ -177,5 +177,13 @@ sudo apt install build-essential dkms linux-headers-$(uname -r)
 
 # tmux
 
+# tar
+
 ---
+
+```
+tar -czvf NAME.tar.gz /path/to/directory
+```
+
+
 

@@ -318,6 +318,6 @@ powershell helped -custom "cmd.exe /c <blah>"
 
 ```
 privilege::debug
-
+token::elevate
 ```
 

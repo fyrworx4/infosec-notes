@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Mon Aug 16 14:36:52 2021 as: nmap -Pn -vv -A -oA scans -p 1-15000 10.200.187.200 -->
+<nmaprun scanner="nmap" args="nmap -Pn -vv -A -oA scans -p 1-15000 10.200.187.200" start="1629139012" startstr="Mon Aug 16 14:36:52 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="15000" services="1-15000"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1629139012"/>
+<taskend task="NSE" time="1629139012"/>
+<taskbegin task="NSE" time="1629139012"/>
+<taskend task="NSE" time="1629139012"/>
+<taskbegin task="NSE" time="1629139012"/>
+<taskend task="NSE" time="1629139012"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1629139012"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1629139012"/>
+<taskbegin task="SYN Stealth Scan" time="1629139012"/>
+<taskprogress task="SYN Stealth Scan" time="1629139043" percent="39.98" remaining="47" etc="1629139090"/>
+<taskend task="SYN Stealth Scan" time="1629139078" extrainfo="15000 total ports"/>
+<taskbegin task="Service scan" time="1629139079"/>
+<taskend task="Service scan" time="1629139091" extrainfo="4 services on 1 host"/>
+<taskbegin task="Traceroute" time="1629139096"/>
+<taskend task="Traceroute" time="1629139096"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1629139096"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1629139096"/>
+<taskbegin task="NSE" time="1629139096"/>
+<taskend task="NSE" time="1629139126"/>
+<taskbegin task="NSE" time="1629139126"/>
+<taskend task="NSE" time="1629139127"/>
+<taskbegin task="NSE" time="1629139127"/>
+<taskend task="NSE" time="1629139127"/>
+<host starttime="1629139012" endtime="1629139127"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.200.187.200" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="14995">
+<extrareasons reason="no-responses" count="14924"/>
+<extrareasons reason="admin-prohibiteds" count="71"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="8.0" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.0</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 9c:1b:d4:b4:05:4d:88:99:ce:09:1f:c1:15:6a:d4:7e (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDfKbbFLiRV9dqsrYQifAghp85qmXpYEHf2g4JJqDKUL316TcAoGj62aamfhx5isIJHtQsA0hVmzD+4pVH4r8ANkuIIRs6j9cnBrLGpjk8xz9+BE1Vvd8lmORGxCqTv+9LgrpB7tcfoEkIOSG7zeY182kOR72igUERpy0JkzxJm2gIGb7Caz1s5/ScHEOhGX8VhNT4clOhDc9dLePRQvRooicIsENqQsLckE0eJB7rTSxemWduL+twySqtwN80a7pRzS7dzR4f6fkhVBAhYflJBW3iZ46zOItZcwT2u0wReCrFzxvDxEOewH7YHFpvOvb+Exuf3W6OuSjCHF64S7iU6z92aINNf+dSROACXbmGnBhTlGaV57brOXzujsWDylivWZ7CVVj1gB6mrNfEpBNE983qZskyVk4eTNT5cUD+3I/IPOz1bOtOWiraZCevFYaQR5AxNmx8sDIgo1z4VcxOMhrczc7RC/s3KWcoIkI2cI5+KUnDtaOfUClXPBCgYE50=&#xa;  256 93:55:b4:d9:8b:70:ae:8e:95:0d:c2:b6:d2:03:89:a4 (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFccvYHwpGWYUsw9mTk/mEvzyrY4ghhX2D6o3n/upTLFXbhJPV6ls4C8O0wH6TyGq7ClV3XpVa7zevngNoqlwzM=&#xa;  256 f0:61:5a:55:34:9b:b7:b8:3a:46:ca:7d:9f:dc:fa:12 (ED25519)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINLfVtZHSGvCy3JP5GX0Dgzcxz+Y9In0TcQc3vhvMXCP"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQDfKbbFLiRV9dqsrYQifAghp85qmXpYEHf2g4JJqDKUL316TcAoGj62aamfhx5isIJHtQsA0hVmzD+4pVH4r8ANkuIIRs6j9cnBrLGpjk8xz9+BE1Vvd8lmORGxCqTv+9LgrpB7tcfoEkIOSG7zeY182kOR72igUERpy0JkzxJm2gIGb7Caz1s5/ScHEOhGX8VhNT4clOhDc9dLePRQvRooicIsENqQsLckE0eJB7rTSxemWduL+twySqtwN80a7pRzS7dzR4f6fkhVBAhYflJBW3iZ46zOItZcwT2u0wReCrFzxvDxEOewH7YHFpvOvb+Exuf3W6OuSjCHF64S7iU6z92aINNf+dSROACXbmGnBhTlGaV57brOXzujsWDylivWZ7CVVj1gB6mrNfEpBNE983qZskyVk4eTNT5cUD+3I/IPOz1bOtOWiraZCevFYaQR5AxNmx8sDIgo1z4VcxOMhrczc7RC/s3KWcoIkI2cI5+KUnDtaOfUClXPBCgYE50=</elem>
+<elem key="fingerprint">9c1bd4b4054d8899ce091fc1156ad47e</elem>
+<elem key="bits">3072</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFccvYHwpGWYUsw9mTk/mEvzyrY4ghhX2D6o3n/upTLFXbhJPV6ls4C8O0wH6TyGq7ClV3XpVa7zevngNoqlwzM=</elem>
+<elem key="fingerprint">9355b4d98b70ae8e950dc2b6d20389a4</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAINLfVtZHSGvCy3JP5GX0Dgzcxz+Y9In0TcQc3vhvMXCP</elem>
+<elem key="fingerprint">f0615a55349bb7b83a46ca7d9fdcfa12</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.37" extrainfo="(centos) OpenSSL/1.1.1c" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.37</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.37 (centos) OpenSSL/1.1.1c"><elem>Apache/2.4.37 (centos) OpenSSL/1.1.1c</elem>
+</script><script id="http-title" output="Did not follow redirect to https://thomaswreath.thm"><elem key="redirect_url">https://thomaswreath.thm</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.37" extrainfo="(centos) OpenSSL/1.1.1c" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.37</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET POST OPTIONS HEAD TRACE&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>TRACE</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.37 (centos) OpenSSL/1.1.1c"><elem>Apache/2.4.37 (centos) OpenSSL/1.1.1c</elem>
+</script><script id="http-title" output="Thomas Wreath | Developer"><elem key="title">Thomas Wreath | Developer</elem>
+</script><script id="ssl-cert" output="Subject: commonName=thomaswreath.thm/organizationName=Thomas Wreath Development/stateOrProvinceName=East Riding Yorkshire/countryName=GB/localityName=Easingwold/emailAddress=me@thomaswreath.thm&#xa;Issuer: commonName=thomaswreath.thm/organizationName=Thomas Wreath Development/stateOrProvinceName=East Riding Yorkshire/countryName=GB/localityName=Easingwold/emailAddress=me@thomaswreath.thm&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2021-08-16T15:55:19&#xa;Not valid after:  2022-08-16T15:55:19&#xa;MD5:   902a 5b04 53af a71b de48 9915 ae84 0598&#xa;SHA-1: ddc3 051f 2c25 c139 dafa 7a7e e4c9 69fd 8e55 54fc&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIELTCCAxWgAwIBAgIUXmjvhVXAlEXOU4JUZStB+b3drCMwDQYJKoZIhvcNAQEL&#xa;BQAwgaUxCzAJBgNVBAYTAkdCMR4wHAYDVQQIDBVFYXN0IFJpZGluZyBZb3Jrc2hp&#xa;cmUxEzARBgNVBAcMCkVhc2luZ3dvbGQxIjAgBgNVBAoMGVRob21hcyBXcmVhdGgg&#xa;RGV2ZWxvcG1lbnQxGTAXBgNVBAMMEHRob21hc3dyZWF0aC50aG0xIjAgBgkqhkiG&#xa;9w0BCQEWE21lQHRob21hc3dyZWF0aC50aG0wHhcNMjEwODE2MTU1NTE5WhcNMjIw&#xa;ODE2MTU1NTE5WjCBpTELMAkGA1UEBhMCR0IxHjAcBgNVBAgMFUVhc3QgUmlkaW5n&#xa;IFlvcmtzaGlyZTETMBEGA1UEBwwKRWFzaW5nd29sZDEiMCAGA1UECgwZVGhvbWFz&#xa;IFdyZWF0aCBEZXZlbG9wbWVudDEZMBcGA1UEAwwQdGhvbWFzd3JlYXRoLnRobTEi&#xa;MCAGCSqGSIb3DQEJARYTbWVAdGhvbWFzd3JlYXRoLnRobTCCASIwDQYJKoZIhvcN&#xa;AQEBBQADggEPADCCAQoCggEBAMpnVGF1DwUWqgOTMBVG+fojJQAHRcW1bbIjrsH9&#xa;ksQXtOOkUoDDJCYGEkHQK/Ke9ZLtG2GjL6qrvE1CYPJb0Q0BN3eb0DLcwfdkBzwg&#xa;YglG4smDYvkl6KnBoMxwyx5Z2LZcv3dt6FS7oP2bARycDqO3Wn8ypsfllY0LvirW&#xa;4rM2mSRLlARP6CUgwjXFZwUgcuUK+sj0iCeQ3Jm8qELtLhb1AruB7XeubsLkOXPU&#xa;wpobr5GrVUCy1BlWjFqC+iWuu/X372BKsJK2rEMUEgBcJPlxOps7b60VhQKH9TyI&#xa;dakD4r0DPkehOW1/EnvzrqqfDeZ0LCx8JNRELKXKw4puWsMCAwEAAaNTMFEwHQYD&#xa;VR0OBBYEFErWn/C+FLmJSZPgNnjyawCtym5wMB8GA1UdIwQYMBaAFErWn/C+FLmJ&#xa;SZPgNnjyawCtym5wMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEB&#xa;AKDDuOt7vNpz3rmHB/W6TWdzUBZjUJKNKSB/sRW0z+FkYsX8S3y3a9j9ac33eatE&#xa;hKfGycKDWxv4iBsU9+kglm1xy4YKTRF5nbg1w6poDCqPi4wnGxWw26JJa2FvnccZ&#xa;UN35wbZH3umVTsuKpXnqclZzTgsSv7xLca4unEYSV02r/WN+teu3EiLa4yvl5Pt7&#xa;ftaP4hEEg5lMAWEZ7E/sKq9apnvoHL8o3jyO2dCt2GcA+MmdAeV+e7YfiCebZmCc&#xa;egyH4VkMBKISSO64rnr6IWxcoZMn28pM4DG1/QJZWt3ijOeeasL1Q1N3fNJ57kZN&#xa;7bL2q3RWuUwb/fcbOASpMbI=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">thomaswreath.thm</elem>
+<elem key="countryName">GB</elem>
+<elem key="emailAddress">me@thomaswreath.thm</elem>
+<elem key="localityName">Easingwold</elem>
+<elem key="organizationName">Thomas Wreath Development</elem>
+<elem key="stateOrProvinceName">East Riding Yorkshire</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">thomaswreath.thm</elem>
+<elem key="countryName">GB</elem>
+<elem key="emailAddress">me@thomaswreath.thm</elem>
+<elem key="localityName">Easingwold</elem>
+<elem key="organizationName">Thomas Wreath Development</elem>
+<elem key="stateOrProvinceName">East Riding Yorkshire</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">CA675461750F0516AA0393301546F9FA2325000745C5B56DB223AEC1FD92C417B4E3A45280C32426061241D02BF29EF592ED1B61A32FAAABBC4D4260F25BD10D0137779BD032DCC1F764073C20620946E2C98362F925E8A9C1A0CC70CB1E59D8B65CBF776DE854BBA0FD9B011C9C0EA3B75A7F32A6C7E5958D0BBE2AD6E2B33699244B94044FE82520C235C567052072E50AFAC8F4882790DC99BCA842ED2E16F502BB81ED77AE6EC2E43973D4C29A1BAF91AB5540B2D419568C5A82FA25AEBBF5F7EF604AB092B6AC431412005C24F9713A9B3B6FAD15850287F53C8875A903E2BD033E47A1396D7F127BF3AEAA9F0DE6742C2C7C24D4442CA5CAC38A6E5AC3</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">4A:D6:9F:F0:BE:14:B9:89:49:93:E0:36:78:F2:6B:00:AD:CA:6E:70</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:4A:D6:9F:F0:BE:14:B9:89:49:93:E0:36:78:F2:6B:00:AD:CA:6E:70&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:TRUE</elem>
+<elem key="critical">true</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-08-16T15:55:19</elem>
+<elem key="notAfter">2022-08-16T15:55:19</elem>
+</table>
+<elem key="md5">902a5b0453afa71bde489915ae840598</elem>
+<elem key="sha1">ddc3051f2c25c139dafa7a7ee4c969fd8e5554fc</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIELTCCAxWgAwIBAgIUXmjvhVXAlEXOU4JUZStB+b3drCMwDQYJKoZIhvcNAQEL&#xa;BQAwgaUxCzAJBgNVBAYTAkdCMR4wHAYDVQQIDBVFYXN0IFJpZGluZyBZb3Jrc2hp&#xa;cmUxEzARBgNVBAcMCkVhc2luZ3dvbGQxIjAgBgNVBAoMGVRob21hcyBXcmVhdGgg&#xa;RGV2ZWxvcG1lbnQxGTAXBgNVBAMMEHRob21hc3dyZWF0aC50aG0xIjAgBgkqhkiG&#xa;9w0BCQEWE21lQHRob21hc3dyZWF0aC50aG0wHhcNMjEwODE2MTU1NTE5WhcNMjIw&#xa;ODE2MTU1NTE5WjCBpTELMAkGA1UEBhMCR0IxHjAcBgNVBAgMFUVhc3QgUmlkaW5n&#xa;IFlvcmtzaGlyZTETMBEGA1UEBwwKRWFzaW5nd29sZDEiMCAGA1UECgwZVGhvbWFz&#xa;IFdyZWF0aCBEZXZlbG9wbWVudDEZMBcGA1UEAwwQdGhvbWFzd3JlYXRoLnRobTEi&#xa;MCAGCSqGSIb3DQEJARYTbWVAdGhvbWFzd3JlYXRoLnRobTCCASIwDQYJKoZIhvcN&#xa;AQEBBQADggEPADCCAQoCggEBAMpnVGF1DwUWqgOTMBVG+fojJQAHRcW1bbIjrsH9&#xa;ksQXtOOkUoDDJCYGEkHQK/Ke9ZLtG2GjL6qrvE1CYPJb0Q0BN3eb0DLcwfdkBzwg&#xa;YglG4smDYvkl6KnBoMxwyx5Z2LZcv3dt6FS7oP2bARycDqO3Wn8ypsfllY0LvirW&#xa;4rM2mSRLlARP6CUgwjXFZwUgcuUK+sj0iCeQ3Jm8qELtLhb1AruB7XeubsLkOXPU&#xa;wpobr5GrVUCy1BlWjFqC+iWuu/X372BKsJK2rEMUEgBcJPlxOps7b60VhQKH9TyI&#xa;dakD4r0DPkehOW1/EnvzrqqfDeZ0LCx8JNRELKXKw4puWsMCAwEAAaNTMFEwHQYD&#xa;VR0OBBYEFErWn/C+FLmJSZPgNnjyawCtym5wMB8GA1UdIwQYMBaAFErWn/C+FLmJ&#xa;SZPgNnjyawCtym5wMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEB&#xa;AKDDuOt7vNpz3rmHB/W6TWdzUBZjUJKNKSB/sRW0z+FkYsX8S3y3a9j9ac33eatE&#xa;hKfGycKDWxv4iBsU9+kglm1xy4YKTRF5nbg1w6poDCqPi4wnGxWw26JJa2FvnccZ&#xa;UN35wbZH3umVTsuKpXnqclZzTgsSv7xLca4unEYSV02r/WN+teu3EiLa4yvl5Pt7&#xa;ftaP4hEEg5lMAWEZ7E/sKq9apnvoHL8o3jyO2dCt2GcA+MmdAeV+e7YfiCebZmCc&#xa;egyH4VkMBKISSO64rnr6IWxcoZMn28pM4DG1/QJZWt3ijOeeasL1Q1N3fNJ57kZN&#xa;7bL2q3RWuUwb/fcbOASpMbI=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="9090"><state state="closed" reason="reset" reason_ttl="63"/><service name="zeus-admin" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10000"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="MiniServ" version="1.890" extrainfo="Webmin httpd" method="probed" conf="10"/><script id="http-favicon" output="Unknown favicon MD5: BE160188754003CF74DB153D31CBEA67"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html; Charset=iso-8859-1)."></script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="9090"/>
+<osmatch name="HP P2000 G3 NAS device" accuracy="91" line="35040">
+<osclass type="storage-misc" vendor="HP" osfamily="embedded" accuracy="91"><cpe>cpe:/h:hp:p2000_g3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="90" line="55602">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 3.1" accuracy="90" line="56508">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Infomir MAG-250 set-top box" accuracy="90" line="59630">
+<osclass type="media device" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="media device" vendor="Infomir" osfamily="embedded" accuracy="90"><cpe>cpe:/h:infomir:mag-250</cpe></osclass>
+</osmatch>
+<osmatch name="Ubiquiti AirMax NanoStation WAP (Linux 2.6.32)" accuracy="90" line="61700">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+<osclass type="WAP" vendor="Ubiquiti" osfamily="embedded" accuracy="90"><cpe>cpe:/h:ubnt:airmax_nanostation</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.7" accuracy="90" line="65888">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3.7</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.0" accuracy="90" line="68045">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:5.0</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.1" accuracy="90" line="68124">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:5.1</cpe></osclass>
+</osmatch>
+<osmatch name="Ubiquiti AirOS 5.5.9" accuracy="90" line="103318">
+<osclass type="WAP" vendor="Ubiquiti" osfamily="AirOS" osgen="5.X" accuracy="90"><cpe>cpe:/o:ubnt:airos:5.5.9</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.0 - 5.4" accuracy="89" line="68106">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="SCAN(V=7.91%E=4%D=8/16%OT=22%CT=9090%CU=%PV=Y%DS=2%DC=T%G=N%TM=611AB0B7%P=x86_64-pc-linux-gnu)&#xa;SEQ(SP=104%GCD=1%ISR=10B%TI=Z%CI=Z%TS=A)&#xa;SEQ(SP=104%GCD=1%ISR=10B%TI=Z%CI=Z%II=I%TS=A)&#xa;OPS(O1=M506ST11NW7%O2=M506ST11NW7%O3=M506NNT11NW7%O4=M506ST11NW7%O5=M506ST11NW7%O6=M506ST11)&#xa;WIN(W1=68DF%W2=68DF%W3=68DF%W4=68DF%W5=68DF%W6=68DF)&#xa;ECN(R=Y%DF=Y%TG=40%W=6903%O=M506NNSNW7%CC=Y%Q=)&#xa;T1(R=Y%DF=Y%TG=40%S=O%A=S+%F=AS%RD=0%Q=)&#xa;T2(R=N)&#xa;T3(R=N)&#xa;T4(R=Y%DF=Y%TG=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)&#xa;T5(R=Y%DF=Y%TG=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)&#xa;T6(R=Y%DF=Y%TG=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)&#xa;T7(R=N)&#xa;U1(R=N)&#xa;IE(R=Y%DFI=N%TG=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="946719" lastboot="Thu Aug  5 15:40:08 2021"/>
+<distance value="2"/>
+<tcpsequence index="260" difficulty="Good luck!" values="5496D4A7,71C3AB0E,104B1DBE,6DE72EF0,867C866F,2D9FEF91"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="386D4846,386D48AD,386D4918,386D4973,386D49DB,386D4A41"/>
+<trace port="9090" proto="tcp">
+<hop ttl="1" ipaddr="10.50.184.1" rtt="152.37"/>
+<hop ttl="2" ipaddr="10.200.187.200" rtt="152.86"/>
+</trace>
+<times srtt="152926" rttvar="402" to="154534"/>
+</host>
+<taskbegin task="NSE" time="1629139127"/>
+<taskend task="NSE" time="1629139127"/>
+<taskbegin task="NSE" time="1629139127"/>
+<taskend task="NSE" time="1629139127"/>
+<taskbegin task="NSE" time="1629139127"/>
+<taskend task="NSE" time="1629139127"/>
+<runstats><finished time="1629139127" timestr="Mon Aug 16 14:38:47 2021" summary="Nmap done at Mon Aug 16 14:38:47 2021; 1 IP address (1 host up) scanned in 115.52 seconds" elapsed="115.52" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
