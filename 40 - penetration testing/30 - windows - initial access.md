@@ -1,5 +1,11 @@
 # windows - initial access
 
+## checklist
+
+* Vulnerable, external facing services?
+* Any credentials leaked somewhere?
+* etc.
+
 ## evil-winrm
 
 ```bash

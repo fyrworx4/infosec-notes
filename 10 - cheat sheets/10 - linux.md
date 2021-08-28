@@ -113,8 +113,6 @@
 * `route` - show routing table
 * `dhclient` - show stats of DHCP client
 
-
-
 # sysadmin commmands
 
 ---
@@ -132,7 +130,7 @@ sudo hostnamectl set-hostname [hostname]
 add a new user:
 
 ```bash
-sudo useradd -m -s /b[username]
+sudo useradd -m -s /bin/bash [username]
 sudo passwd  [username]
 ```
 

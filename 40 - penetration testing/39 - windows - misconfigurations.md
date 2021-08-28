@@ -10,11 +10,12 @@ Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogo
 
 Edit / create new keys:
 
-| Name              | Value        |
-| ----------------- | ------------ |
-| DefaultUserName   | s.chisholm   |
-| DefaultPassword   | FallOutBoy1! |
-| DefaultDomainName | mayorsec     |
+| Name              | Type   | Value        |
+| ----------------- | ------ | ------------ |
+| DefaultUserName   | String | s.chisholm   |
+| DefaultPassword   | String | FallOutBoy1! |
+| DefaultDomainName | String | mayorsec     |
+| AutoAdminLogon    | String | 1            |
 
 Exploiting:
 

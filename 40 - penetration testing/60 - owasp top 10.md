@@ -38,6 +38,7 @@ defending:
 if databases are able to be downloaded, use sqlite to view them
 
 ```sqlite
+.
 pragma table_info(customers);
 select * from customers;
 ```

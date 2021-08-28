@@ -309,7 +309,7 @@ PowershellImport
 
 * select helper.ps1 *
 
-powershell helped -custom "cmd.exe /c <blah>"
+powershell helper -custom "cmd.exe /c <blah>"
 ```
 
 ## mimikatz
