@@ -1,7 +1,5 @@
 # linox
 
----
-
 ## package management
 
 * `apt install` - install package
@@ -175,9 +173,43 @@ sudo apt install build-essential dkms linux-headers-$(uname -r)
 
 # tmux
 
+## session mgmt
+
+* `tmux` - make new tmux session
+* `tmux ls` - list sessions
+* `tmux kill-ses -t <session-name>` - kill session
+* `tmux a -t <session-name>` - attach session
+* `Ctrl + B` `$` - rename session
+* `Ctrl + B` `D` - detatch from session
+* `Ctrl + B` `W` - session and window preview
+
+## windows
+
+* `Ctrl + B` `C` - create new window
+* `Ctrl + B` `,` - rename window
+* `Ctrl + B` `&` - close current window
+
+## panes
+
+`Ctrl + B` `%` - split pane horizontally
+
+`Ctrl + B` `"` - split pane vertically
+
+`Ctrl + B` `;` - toggle last pane
+
+`Ctrl + B` `X` - close current pane
+
+`Ctrl + B` `Q` - show pane numbers
+
+`Ctrl + B` `Q` `0-9` - switch pane based off number
+
+`: setw synchronize-panes` 
+
 # tar
 
----
+
+
+
 
 ```
 tar -czvf NAME.tar.gz /path/to/directory
