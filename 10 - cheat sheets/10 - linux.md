@@ -129,7 +129,7 @@ add a new user:
 
 ```bash
 sudo useradd -m -s /bin/bash [username]
-sudo passwd  [username]
+sudo passwd [username]
 ```
 
 add user to sudo group
