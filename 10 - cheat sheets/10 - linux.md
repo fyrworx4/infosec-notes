@@ -207,12 +207,26 @@ sudo apt install build-essential dkms linux-headers-$(uname -r)
 
 # tar
 
-
-
-
-
 ```
 tar -czvf NAME.tar.gz /path/to/directory
+```
+
+# ufw
+
+```
+apt -y install ufw
+systemctl enable ufw
+
+ufw allow 22/tcp
+ufw allow 80/tcp
+ufw allow 443/tcp
+ufw allow 10050/tcp
+
+ufw default reject incoming
+ufw default allow outgoing
+ufw default deny routed
+ufw show added
+ufw show listening
 ```
 
 

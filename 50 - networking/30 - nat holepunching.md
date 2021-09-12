@@ -75,5 +75,11 @@ sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 10527 -j DNAT --to-des
 sudo iptables -t nat -A POSTROUTING -o wg0 -p tcp --dport 10527 -d 192.168.4.2 -j SNAT --to-source 192.168.4.1
 ```
 
+## keep iptables rules
 
+```
+sudo apt install netfilter-persistent
+sudo netfilter-persistent save
+sudo systemctl enable netfilter-persistent
+```
 
