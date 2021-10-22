@@ -38,13 +38,14 @@ run
 post/multi/recon/local_exploit_suggester
 ```
 
-## meterpreter shell commands
+## enumeration with metasploit
 
-* `sysinfo`
-* `getuid`
-* `ipconfig`
-* `arp`
-* `run post/windows/gather/enum_services`
-* `run post/windows/gather/enum_applications`
+* `sysinfo` - get system information
+* `getuid` - get current user that shell is living in
+* `ipconfig` - view IP addresses
+* `arp` - view ARP cache
+* `run post/windows/gather/enum_services` - view running services
+* `run post/windows/gather/enum_applications` - view installed applications
+* `run post/windows/gather/enum_domains` - view domains (might crash)
 * `route`
-* 
+
